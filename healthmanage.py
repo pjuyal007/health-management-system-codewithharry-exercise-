@@ -21,7 +21,7 @@ if lr==1:
           diets.append(die1)
         die2= '\n'.join(diets)#joims the strings with the seperator we want
 
-        f.write(f"{die2} [{getdate()}] \n")
+        f.write(f"[{getdate()}] \n {die2}")
         f.close()
         print("successfully logged diet plan for pankaj")
     elif c==1 and de==2:
@@ -34,7 +34,7 @@ if lr==1:
                 break
            works.append(wo1)
         wo2="\n".join(works)
-        f.write(f" {wo2} {getdate()}:\n")
+        f.write(f"{getdate()}:\n {wo2}")
         f.close()
         print("successfully logged workout plan for pankaj")
     if c==2 and de==1:
@@ -48,7 +48,7 @@ if lr==1:
           diets.append(die1)
         die2= '\n'.join(diets)#joims the strings with the seperator we want
 
-        f.write(f"{die2} [{getdate()}] \n")
+        f.write(f"[{getdate()}] \n {die2}")
         f.close()
         print("successfully logged diet plan for neeraj")
     elif c==2 and de==2:
@@ -61,7 +61,7 @@ if lr==1:
                 break
            works.append(wo1)
         wo2="\n".join(works)
-        f.write(f" {wo2} {getdate()}:\n")
+        f.write(f"{getdate()}:\n {wo2}")
         f.close()
         print("successfully logged workout plan for neeraj")
     if c==3 and de==1:
@@ -75,7 +75,7 @@ if lr==1:
           diets.append(die1)
         die2= '\n'.join(diets)#joims the strings with the seperator we want
 
-        f.write(f"{die2} [{getdate()}] \n")
+        f.write(f"[{getdate()}] \n {die2}")
         f.close()
         print("successfully logged diet plan for kunal")
     elif c==3 and de==2:
@@ -88,7 +88,7 @@ if lr==1:
                 break
            works.append(wo1)
         wo2="\n".join(works)
-        f.write(f" {wo2} {getdate()}:\n")
+        f.write(f"{getdate()}:\n {wo2}")
         f.close()
         print("successfully logged workout plan for kunal")
     else:
@@ -133,11 +133,3 @@ if lr==2 :
                 print(f.read())
         else:
             print("No logs found yet for kunal's workout.")
-
-
-
-
-
-
-
-
